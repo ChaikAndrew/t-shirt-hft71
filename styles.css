@@ -1,0 +1,389 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Finlandica", sans-serif;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  background-size: cover;
+
+  background-image: linear-gradient(0.51turn, #1d12127c, #3d00191c),
+    url(./images/photo-1523381210434-271e8be1f52b.avif);
+}
+
+body.modal-open {
+  overflow: auto;
+}
+
+label {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+select,
+input {
+  margin: 10px;
+  padding: 5px;
+}
+
+.main-section,
+.article {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 500px;
+  padding: 15px;
+
+  border-radius: 15px;
+  background-color: #f2f2f247;
+  backdrop-filter: blur(1px);
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.article {
+  margin-top: 4px;
+  text-align: center;
+  color: #363636;
+}
+
+.title {
+  margin: 2px;
+  text-align: center;
+
+  color: #363636;
+}
+
+.subtitle {
+  margin: 0;
+  text-align: center;
+
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.article_subtitle {
+  margin: 0;
+}
+.subtitle_item-first {
+  margin-left: 3px;
+  color: rgba(0, 34, 255, 0.475);
+}
+
+.subtitle_item-second {
+  color: rgba(255, 81, 0, 0.475);
+}
+
+.dropdown {
+  text-align: center;
+
+  color: #363636;
+}
+
+.search {
+  margin-left: auto;
+  margin-right: auto;
+  width: 220px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#result {
+  margin: 20px;
+  font-weight: bold;
+}
+#resultContainer {
+  margin: auto;
+  margin-top: 10px;
+}
+
+.result-container {
+  padding: 2px;
+  border-radius: 7px;
+  background-color: #ffffff7a;
+}
+
+#resultContainer .namelight {
+  font-size: 22px;
+  color: rgb(162, 78, 0);
+  margin-right: 6px;
+}
+
+#resultContainer .numberlight {
+  font-size: 22px;
+  color: rgb(0, 95, 146);
+}
+
+#searchType,
+#searchValue {
+  text-align: center;
+
+  border: none;
+  background: none;
+  border-radius: 5px;
+
+  font-size: 18px;
+  color: #242424;
+  background-color: #ffffff7a;
+}
+
+.search-container {
+  margin-bottom: 8px;
+}
+
+.select,
+input {
+  margin: 3px;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 555px) {
+  #resultContainer {
+    font-size: 16px;
+  }
+
+  .main-section,
+  .article {
+    max-width: 310px;
+  }
+
+  #searchType,
+  #searchValue {
+    font-size: 16px;
+  }
+
+  #resultContainer .namelight {
+    font-size: 18px;
+  }
+
+  #resultContainer .numberlight {
+    font-size: 18px;
+  }
+}
+
+#searchType {
+  cursor: pointer;
+  margin: 3px;
+  padding: 5px;
+}
+
+/* backdrop */
+#backdrop,
+#backdrop2,
+#backdrop3,
+#backdrop4 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* table parametrs */
+#sizeTable,
+#sizeTable2,
+#sizeTable3,
+#sizeTable4 {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+#sizeTable4 {
+  width: 320px;
+  height: auto;
+}
+@media only screen and (max-width: 550px) {
+  #sizeTable4 {
+    height: 550px;
+    overflow: scroll;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+  }
+}
+
+#showSizeTable,
+#closeSizeTable,
+#showSizeTable2,
+#closeSizeTable2,
+#showSizeTable3,
+#closeSizeTable3,
+#showSizeTable4,
+#closeSizeTable4 {
+  width: 220px;
+  margin-top: 15px;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+
+  font-size: 18px;
+
+  color: #242424;
+  background-color: #ffffff7a;
+}
+
+#closeSizeTable,
+#closeSizeTable2,
+#closeSizeTable3,
+#closeSizeTable4 {
+  width: 115px;
+  background-color: #dddddd7a;
+}
+
+#showSizeTable:hover,
+#closeSizeTable:hover,
+#showSizeTable:focus,
+#closeSizeTable:focus,
+#showSizeTable2:hover,
+#closeSizeTable2:hover,
+#showSizeTable2:focus,
+#closeSizeTable2:focus,
+#showSizeTable3:hover,
+#closeSizeTable3:hover,
+#showSizeTable3:focus,
+#closeSizeTable3:focus,
+#showSizeTable4:hover,
+#closeSizeTable4:hover,
+#showSizeTable4:focus,
+#closeSizeTable4:focus {
+  cursor: pointer;
+  background-color: #b2b2b27a;
+}
+
+.center-button {
+  text-align: center;
+}
+
+#sizeTable,
+#sizeTable2,
+#sizeTable3,
+#sizeTable4 {
+  border: none;
+  border-radius: 15px;
+}
+
+.table-parameters__title {
+  margin-bottom: 20px;
+}
+
+.table-parameters {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table-parameters__caption {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.table-parameters__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  min-width: 200px;
+  padding: 2px;
+  margin-top: 3px;
+  font-size: 20px;
+
+  background: #efefef;
+  border-radius: 5px;
+
+  transition: transform 0.2s ease-in-out;
+}
+
+.table-parameters__info:hover,
+.table-parameters__info:focus {
+  cursor: pointer;
+
+  background: #e1e1e1;
+  transform: scale(1.03);
+}
+
+.center-button {
+  text-align: center;
+}
+
+.rotating-div {
+  width: 20px;
+  height: 20px;
+
+  margin-right: 10px;
+}
+
+.animate-rotation {
+  animation: rotate 1.5s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.footer-container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  border-top: 0.1px solid rgba(255, 255, 255, 0.322);
+  color: #ffffff5b;
+  background-color: #00000010;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  backdrop-filter: blur(40px);
+}
+
+.footer-about {
+  margin: 0;
+  font-size: 13px;
+}
+
+.fotl-info {
+  width: 310px;
+  justify-content: space-between;
+}
+
+#sizeTable4 {
+  overflow: scroll;
+}

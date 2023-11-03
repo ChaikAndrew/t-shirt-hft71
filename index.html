@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Helper</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Finlandica:wght@400;600&family=Jost&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://hft71.pl/wp-content/uploads/2023/08/x64.png.pagespeed.ic.VKASswasPI.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <section class="main-section">
+      <h1 class="title">Your Helper</h1>
+
+      <!-- main first block -->
+      <div class="logo">
+        <div class="rotating-div" tabindex="0">
+          <object data="./images/hft.svg" width="20" height="20"></object>
+        </div>
+        <a href="index.html">
+          <h2 class="subtitle">
+            HFT<span class="subtitle_item-first">7</span
+            ><span class="subtitle_item-second">1</span>
+          </h2>
+        </a>
+      </div>
+
+      <!-- dropdown -->
+      <div class="dropdown">
+        <label for="searchType">Select search type:</label>
+      </div>
+
+      <!-- sort selection -->
+      <div class="search">
+        <select id="searchType">
+          <option value="color">By name</option>
+          <option value="number">By number</option>
+        </select>
+        <input type="text" id="searchValue" onclick="searchColor()" />
+      </div>
+
+      <!-- result block -->
+      <div id="resultContainer" class="result"></div>
+    </section>
+
+    <!-- modal button -->
+    <section class="article">
+      <h3 class="article_subtitle">Color, size and model finder</h3>
+      <button id="showSizeTable">Standard sizes</button>
+      <button id="showSizeTable2">Children's sizes</button>
+      <button id="showSizeTable3">Baby's sizes</button>
+      <button id="showSizeTable4">FotL sizes</button>
+    </section>
+
+    <section class="table-info">
+      <!-- Standard sizes -->
+      <div id="backdrop"></div>
+      <div id="sizeTable">
+        <table class="table-parameters">
+          <tr class="table-parameters__caption">
+            <th class="table-parameters__title">Size</th>
+            <th class="table-parameters__title">Number</th>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>XS</td>
+            <td>0058</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>S</td>
+            <td>0051</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>M</td>
+            <td>0046</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>L</td>
+            <td>0042</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>XL</td>
+            <td>0054</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>2XL</td>
+            <td>0060</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>3XL</td>
+            <td>0037</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>4XL</td>
+            <td>0039</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>5XL</td>
+            <td>0040</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>6XL</td>
+            <td>0041</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>7XL</td>
+            <td>0231</td>
+          </tr>
+        </table>
+
+        <!-- close button -->
+        <div class="center-button">
+          <button id="closeSizeTable">Close</button>
+        </div>
+      </div>
+
+      <!-- Children's sizes -->
+      <div id="backdrop2"></div>
+      <div id="sizeTable2">
+        <table class="table-parameters">
+          <tr class="table-parameters__caption">
+            <th class="table-parameters__title">Size</th>
+            <th class="table-parameters__title">Number</th>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>104</td>
+            <td>0261</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>116</td>
+            <td>0262</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>128</td>
+            <td>0263</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>140</td>
+            <td>0264</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>152</td>
+            <td>0265</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>164</td>
+            <td>0266</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>110/116</td>
+            <td>0133</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>122/128</td>
+            <td>0134</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>134/140</td>
+            <td>0135</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>146/152</td>
+            <td>0136</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>158/164</td>
+            <td>0137</td>
+          </tr>
+        </table>
+
+        <!-- close button -->
+        <div class="center-button">
+          <button id="closeSizeTable2">Close</button>
+        </div>
+      </div>
+
+      <!-- Baby's sizes -->
+      <div id="backdrop3"></div>
+      <div id="sizeTable3">
+        <table class="table-parameters">
+          <tr class="table-parameters__caption">
+            <th class="table-parameters__title">Size</th>
+            <th class="table-parameters__title">Number</th>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>0-3</td>
+            <td>0275</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>3-6</td>
+            <td>0272</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>6-12</td>
+            <td>0269</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>12-18</td>
+            <td>0270</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>18-24</td>
+            <td>0271</td>
+          </tr>
+        </table>
+        <!-- close button -->
+        <div class="center-button">
+          <button id="closeSizeTable3">Close</button>
+        </div>
+      </div>
+
+      <!-- FOTL sizes -->
+      <div id="backdrop4"></div>
+      <div id="sizeTable4">
+        <table class="table-parameters">
+          <tr class="table-parameters__caption fotl-info">
+            <th class="table-parameters__title">Marking on the label</th>
+            <th class="table-parameters__title">Number</th>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>T-SHIRTS</td>
+          </tr>
+          <tr class="table-parameters__info fotl-info">
+            <td>Children Iconic<br />1 50/ Iconic</td>
+            <td>FOTL610230</td>
+          </tr>
+          <tr class="table-parameters__info fotl-info">
+            <td>
+              Children Women<br />
+              Iconic 150/ Iconic
+            </td>
+            <td>FOTL610250</td>
+          </tr>
+          <tr class="table-parameters__info fotl-info">
+            <td>
+              Children Women<br />
+              VALUEWEIGHT
+            </td>
+            <td>FOTL610050</td>
+          </tr>
+          <tr class="table-parameters__info fotl-info">
+            <td>Children<br />VALUEWEIGHT</td>
+            <td>FOTL610330</td>
+          </tr>
+          <tr class="table-parameters__info fotl-info">
+            <td>VALUEWEIGHT</td>
+            <td>FOTL610360</td>
+          </tr>
+          <tr class="table-parameters__info fotl-info">
+            <td>
+              Women<br />
+              VALUEWEIGHT
+            </td>
+            <td>FOTL613720</td>
+          </tr>
+          <tr class="table-parameters__info fotl-info">
+            <td>
+              Iconic 150<br />
+              Iconic
+            </td>
+            <td>FOTL614300</td>
+          </tr>
+          <tr class="table-parameters__info fotl-info">
+            <td>Women<br />Iconic</td>
+            <td>FOTL614320</td>
+          </tr>
+          <tr class="table-parameters__info fotl-info">
+            <td>Iconic 165</td>
+            <td>FOTL614380</td>
+          </tr>
+          <tr class="table-parameters__info fotl-info">
+            <td>
+              VALUEWEIGHT<br />
+              (NIE KOSZULKA)
+            </td>
+            <td>FOTL610980</td>
+          </tr>
+          <tr class="table-parameters__info fotl-info">
+            <td>
+              Children <br />
+              Original
+            </td>
+            <td>FOTL610190</td>
+          </tr>
+          <tr class="table-parameters__info">
+            <td>BLUZY</td>
+          </tr>
+          <tr class="table-parameters__info fotl-info">
+            <td>
+              Women<br />
+              Clasic
+            </td>
+            <td>FOTL620380</td>
+          </tr>
+          <tr class="table-parameters__info fotl-info">
+            <td>Clasic</td>
+            <td>FOTL622080</td>
+          </tr>
+          <tr class="table-parameters__info fotl-info">
+            <td>
+              Children<br />
+              Clasic
+            </td>
+            <td>FOTL620430</td>
+          </tr>
+        </table>
+        <!-- close button -->
+        <div class="center-button">
+          <button id="closeSizeTable4">Close</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer info -->
+    <footer class="footer-container">
+      <p class="footer-about">Wroclaw</p>
+      <p class="footer-about">-2023-</p>
+      <p class="footer-about">Chaika Andrii</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

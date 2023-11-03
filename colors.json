@@ -1,0 +1,396 @@
+{
+    "colors": [
+        {
+            "name": "amber",
+            "number": "00915"
+        },
+        {
+            "name": "aqua",
+            "number": "00002"
+        },
+        {
+            "name": "asphalt",
+            "number": "02726"
+        },
+        {
+            "name": "bark",
+            "number": "03467"
+        },
+        {
+            "name": "berylblue",
+            "number": "04221"
+        },
+        {
+            "name": "birds egg green",
+            "number": "02525"
+        },
+        {
+            "name": "black pure",
+            "number": "05093"
+        },
+        {
+            "name": "black/carbon",
+            "number": "00652"
+        },
+        {
+            "name": "black/charcoal",
+            "number": "01307"
+        },
+        {
+            "name": "black/white",
+            "number": "00826"
+        },
+        {
+            "name": "black/neonorange",
+            "number": "00485"
+        },
+        {
+            "name": "black/neonpink",
+            "number": "00486"
+        },
+        {
+            "name": "bluemint",
+            "number": "01306"
+        },
+        {
+            "name": "bottle green",
+            "number": "03447"
+        },
+        {
+            "name": "brick red",
+            "number": "02788"
+        },
+        {
+            "name": "burgundy",
+            "number": "00606"
+        },
+        {
+            "name": "cardinal red",
+            "number": "02867"
+        },
+        {
+            "name": "charcoal",
+            "number": "00091"
+        },
+        {
+            "name": "chocolate",
+            "number": "00893"
+        },
+        {
+            "name": "cityred",
+            "number": "00491"
+        },
+        {
+            "name": "classic olive",
+            "number": "03437"
+        },
+        {
+            "name": "cobalt blue",
+            "number": "01495"
+        },
+        {
+            "name": "daisy",
+            "number": "02886"
+        },
+        {
+            "name": "dark chocolate",
+            "number": "05335"
+        },
+        {
+            "name": "dark heather grey",
+            "number": "03452"
+        },
+        {
+            "name": "darkgrey",
+            "number": "00094"
+        },
+        {
+            "name": "darkkhaki",
+            "number": "03254"
+        },
+        {
+            "name": "deep navy",
+            "number": "03432"
+        },
+        {
+            "name": "duskrose",
+            "number": "02913"
+        },
+        {
+            "name": "dusty blue",
+            "number": "00747"
+        },
+        {
+            "name": "flame",
+            "number": "05424"
+        },
+        {
+            "name": "forest green",
+            "number": "02532"
+        },
+        {
+            "name": "french navy",
+            "number": "05453"
+        },
+        {
+            "name": "fuchsia",
+            "number": "00106"
+        },
+        {
+            "name": "graphite heather",
+            "number": "05508"
+        },
+        {
+            "name": "green",
+            "number": "00110"
+        },
+        {
+            "name": "",
+            "number": ""
+        },
+        {
+            "name": "grey",
+            "number": "00111"
+        },
+        {
+            "name": "heather blue",
+            "number": "05563"
+        },
+        {
+            "name": "heather burgundy",
+            "number": "03439"
+        },
+        {
+            "name": "heather grey",
+            "number": "00431"
+        },
+        {
+            "name": "heather purple",
+            "number": "03451"
+        },
+        {
+            "name": "heather royal",
+            "number": "05621"
+        },
+        {
+            "name": "heliconia",
+            "number": "02894"
+        },
+        {
+            "name": "hibiskus pink",
+            "number": "02534"
+        },
+        {
+            "name": "indigo blue",
+            "number": "05654"
+        },
+        {
+            "name": "irish green",
+            "number": "03246"
+        },
+        {
+            "name": "kelly green",
+            "number": "02895"
+        },
+        {
+            "name": "khaki",
+            "number": "00472"
+        },
+        {
+            "name": "light blue",
+            "number": "01851"
+        },
+        {
+            "name": "light graphite",
+            "number": "02885"
+        },
+        {
+            "name": "light navy",
+            "number": "01496"
+        },
+        {
+            "name": "light pink",
+            "number": "00760"
+        },
+        {
+            "name": "lightasphalt",
+            "number": "02946"
+        },
+        {
+            "name": "lightrose/white",
+            "number": "01535"
+        },
+        {
+            "name": "lilac",
+            "number": "00145"
+        },
+        {
+            "name": "mint",
+            "number": "00348"
+        },
+        {
+            "name": "multicam",
+            "number": "01394"
+        },
+        {
+            "name": "natural",
+            "number": "00598"
+        },
+        {
+            "name": "nautical navy",
+            "number": "06533"
+        },
+        {
+            "name": "navy",
+            "number": "00155"
+        },
+        {
+            "name": "navy blue",
+            "number": "05819"
+        },
+        {
+            "name": "neo mint",
+            "number": "02533"
+        },
+        {
+            "name": "neonorange",
+            "number": "00354"
+        },
+        {
+            "name": "neonyellow",
+            "number": "00162"
+        },
+        {
+            "name": "ocean blue",
+            "number": "00830"
+        },
+        {
+            "name": "olive",
+            "number": "00176"
+        },
+        {
+            "name": "orange",
+            "number": "00180"
+        },
+        {
+            "name": "orchid pink",
+            "number": "05002"
+        },
+        {
+            "name": "pink",
+            "number": "00185"
+        },
+        {
+            "name": "pink marshmallow",
+            "number": "02042"
+        },
+        {
+            "name": "powder pink",
+            "number": "06534"
+        },
+        {
+            "name": "purple",
+            "number": "00195"
+        },
+        {
+            "name": "purplenight",
+            "number": "03989"
+        },
+        {
+            "name": "ready for dye",
+            "number": "03232"
+        },
+        {
+            "name": "red",
+            "number": "00199"
+        },
+        {
+            "name": "royal",
+            "number": "00205"
+        },
+        {
+            "name": "royal blue",
+            "number": "04528"
+        },
+        {
+            "name": "sand",
+            "number": "00208"
+        },
+        {
+            "name": "sapphire",
+            "number": "02887"
+        },
+        {
+            "name": "sky blue",
+            "number": "03436"
+        },
+        {
+            "name": "soft yellow",
+            "number": "06535"
+        },
+        {
+            "name": "softsalvia",
+            "number": "03259"
+        },
+        {
+            "name": "sports grey",
+            "number": "01513"
+        },
+        {
+            "name": "sunflower",
+            "number": "03449"
+        },
+        {
+            "name": "taxi yellow.",
+            "number": "02704"
+        },
+        {
+            "name": "tropic",
+            "number": "03955"
+        },
+        {
+            "name": "ultraviolet",
+            "number": "01459"
+        },
+        {
+            "name": "unionbeige",
+            "number": "03738"
+        },
+        {
+            "name": "vintageblue",
+            "number": "02428"
+        },
+        {
+            "name": "wet sand",
+            "number": "03872"
+        },
+        {
+            "name": "white",
+            "number": "00220"
+        },
+        {
+            "name": "white/h.grey",
+            "number": "00660"
+        },
+        {
+            "name": "whitesand",
+            "number": "02903"
+        },
+        {
+            "name": "white/black",
+            "number": "00224"
+        },
+        {
+            "name": "white/red",
+            "number": "00237"
+        },
+        {
+            "name": "zinc",
+            "number": "06332"
+        },
+          {
+            "name": "black",
+            "number": "00007"
+        }
+    ]
+}
